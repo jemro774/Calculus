@@ -7,3 +7,11 @@ b = float(input('Enter right endpoint'))
 n = int(input('Enter number of subintervals'))
 f = input('Enter the function')
 LRAM = 0.0
+RRAM = 0.0
+MRAM = 0.0
+for i in range(n):
+    f1 = eval(f)
+    LRAM = LRAM + f1*h
+    x = x + h
+    f2 = eval(f)
+    RRAM = RRAM + f2*h
