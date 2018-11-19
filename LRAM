@@ -15,3 +15,6 @@ for i in range(n):
     x = x + h
     f2 = eval(f)
     RRAM = RRAM + f2*h
+    x = (x1 + x2)/2
+    fm = eval(f)
+    MRAM = MRAM + fm*h
