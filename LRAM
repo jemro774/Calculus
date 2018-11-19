@@ -1,1 +1,9 @@
+#Jack Robey
+#11/19/18
+#LRAM Program
 
+a = float(input('Enter left endpoint'))
+b = float(input('Enter right endpoint'))
+n = int(input('Enter number of subintervals'))
+f = input('Enter the function')
+LRAM = 0.0
