@@ -2,6 +2,8 @@
 #11/19/18
 #LRAM Program
 
+from math import *
+
 a = float(input('Enter left endpoint'))
 b = float(input('Enter right endpoint'))
 n = int(input('Enter number of subintervals'))
@@ -9,6 +11,7 @@ f = input('Enter the function')
 LRAM = 0.0
 RRAM = 0.0
 MRAM = 0.0
+trapezoid = 0.0
 x = a
 h = (b-a)/n
 for i in range(n):
@@ -23,6 +26,13 @@ for i in range(n):
     fm = eval(f)
     MRAM = MRAM + fm*h
     x = x2
+    if i == 0:
+        trapezoid = trapezoid + (h/2)*(fm)
+    elif i > 0 and i < n-1:
+        trapezoid = trapezoid + (h/2)*(2*fm)
+    elif i == n-1:
+        trapezoid = trapezoid + (h/2)*(fm)
 print('LRAM =',LRAM)
 print('RRAM =',RRAM)
 print('MRAM =',MRAM)
+print(trapezoid)
