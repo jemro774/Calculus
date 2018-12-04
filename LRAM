@@ -23,6 +23,6 @@ for i in range(n):
     fm = eval(f)
     MRAM = MRAM + fm*h
     x = x2
-print(LRAM)
-print(RRAM)
-print(MRAM)
+print('LRAM =',LRAM)
+print('RRAM =',RRAM)
+print('MRAM =',MRAM)
